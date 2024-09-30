@@ -1,0 +1,17 @@
+
+
+
+Sorokina 2024
+
+In the present work, we are exploring the possible effects of
+perturbations on streamer dynamics within a range of parameter
+sets rather than trying to reproduce realistic scenarios. It is
+believed that the streamers form in the slow solar wind environ-
+ment and are not observed in the fast solar wind. However, FSW
+setup can result in a better understanding of the MHD Doppler
+shift effect. A more observational-data-driven setup will be the
+subject of a future study
+
+
+
+
