@@ -730,6 +730,40 @@ Lloveras et al. (2017,2020,2022)\\
 }
 
 
+%--------------- imág sintéticas
+{
+\setbeamercolor{title}{fg=blue}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{frametitle}{fg=blue}
+\usebeamercolor[fg]{normal text}
+\usebackgroundtemplate{{\includegraphics[width=\paperwidth]
+{figuras/fondo_poster_70x90cm.pdf}}}
+\frame{
+\titulo{EUV Synthetic Images: EUV-SRT vs AWSoM}
+\vskip -3cm
+\begin{center}
+\includegraphics[width=0.99\textwidth,clip=]{figuras/Figura_2_paper_imag_sinteticas_2.eps}
+\end{center}
+
+\begin{columns}
+\column{0.35\textwidth}
+$I_{Synt} \sim \int_{LoS} \mathrm{d}l \, N_e^2 \, Q_k$\\
+%\vskip 0.2cm
+
+
+\column{0.65\textwidth}
+%\scriptsize
+\bu  AWSoM O/C discrepancy due to lack of accuracy of boundary condition.\\ 
+\hfill (Lloveras et al. 2022)\\
+\end{columns}
+%\bu AWSoM reproduce las Ne basales EUV-SRT con un acuerdo $\simeq$ 10\% \\
+%\bu La $\lambda_N$ y temperatura simuladas son sistemáticamente 5-20\% menores.
+}
+}
+
+
+
+
 %------------------- PFSS
 {
 \setbeamercolor{title}{fg=blue}
@@ -859,14 +893,14 @@ $N_e^{\rm (DEMT)}(r) = N_0\,\exp{\left[\,-\,\left(h/\l\right)\,/\,\left(r/{\rm R
 $T_e^{\rm (DEMT)}(r) = T_0\,+\,a\,h\ $ \\
 $h \equiv r - 1\,\mrsun$ 
       
-
+\hfill FOV $\sim 1.0 - 1.3 \mrsun$
 \end{center}
 
 
 \column{0.5\textwidth}
 \begin{center}
-\includegraphics[width=0.9\textwidth]{figuras/table2_lloveras_2022.png}
-lloveras et al. 2022
+\includegraphics[width=0.99\textwidth]{figuras/table2_lloveras_2022.png}
+Lloveras et al. 2022
 \end{center}
 
 \end{columns}
@@ -888,19 +922,22 @@ lloveras et al. 2022
 \titulo{Results WL-SRT}
 \footnotesize
 \begin{columns}
-\column{0.5\textwidth}
+\column{0.45\textwidth}
 \begin{center}
 
 
 $N_e^{\rm (C2-SRT)}(r) = N_0\,\left(\,r/2.5\,{\rm R_\odot}\right)^{-p} $
 
-$ \langle \l \rangle \equiv  \left\langle \left|  \frac{1}{{\Ne(r)}} \, \frac{{{\rm d}\Ne}}{{\rm d}r}(r) \right|^{-1} \right\rangle {= \frac{\langle r\rangle}{p} = \frac{4.25\,\mrsun}{p}} $
+$ \langle \l \rangle \equiv  \left\langle \left|  \frac{1}{{\Ne(r)}} \, \frac{{{\rm d}\Ne}}{{\rm d}r}(r) \right|^{-1} \right\rangle { = \frac{4.25\,\mrsun}{p}} $
+
+\hfill  FOV $\sim 2.5 - 6.5 \mrsun$
 \end{center}
 
 
-\column{0.5\textwidth}
+\column{0.55\textwidth}
 \begin{center}
 \includegraphics[width=0.99\textwidth]{figuras/table3_lloveras_2022.png}
+Lloveras et al. 2022
 \end{center}
 
 \end{columns}
@@ -912,74 +949,45 @@ $ \langle \l \rangle \equiv  \left\langle \left|  \frac{1}{{\Ne(r)}} \, \frac{{{
 
 
 %---------------------- EUV-SRT vs AWSOM
-{
-\setbeamercolor{title}{fg=blue}
-\setbeamercolor{normal text}{fg=black}
-\setbeamercolor{frametitle}{fg=blue}
-\usebeamercolor[fg]{normal text}
-\usebackgroundtemplate{{\includegraphics[width=\paperwidth]
-{figuras/fondo_poster_70x90cm.pdf}}}
-\frame{ 
-\titulo{EUV-SRT validation of AWSoM}
-\scriptsize
+%{
+%\setbeamercolor{title}{fg=blue}
+%\setbeamercolor{normal text}{fg=black}
+%\setbeamercolor{frametitle}{fg=blue}
+%\usebeamercolor[fg]{normal text}
+%\usebackgroundtemplate{{\includegraphics[width=\paperwidth]
+%{figuras/fondo_poster_70x90cm.pdf}}}
+%\frame{ 
+%\titulo{EUV-SRT validation of AWSoM}
+%\scriptsize
 %\bu Objetivo: Validar la capacidad del modelo en reproducir las reconstrucciones.
 %\bu Motivación: Es AWSoM capaz para reproducir las reconstrucciones tomográficas?
-\vskip -0.2cm
-\begin{columns}
-\column{0.7\textwidth}
-\begin{center}
-\includegraphics[width=0.49\textwidth]{figuras/map_Ne_CR2223_DEMT-AIA_H1_L733_r3d_multistart_1105_Rsun2223.eps}
-\includegraphics[width=0.49\textwidth]{figuras/map_Tm_CR2223_DEMT-AIA_H1_L733_r3d_multistart_1105_Rsun2223_2.eps}\\
-\includegraphics[width=0.49\textwidth]{figuras/map_Ne_awsom_2223_ener_new_1105_Rsun2223.eps}
-\includegraphics[width=0.49\textwidth]{figuras/map_Te_awsom_2223_ener_new_1105_Rsun2223_2.eps}\\
-\includegraphics[width=0.49\textwidth]{figuras/perfil_paper_necr2223_bajo.eps}
-\includegraphics[width=0.49\textwidth]{figuras/perfil_paper_tecr2223_bajo.eps}\\
-\end{center}
-\column{0.3\textwidth}
-\bu Good agreement in magnitude and morphology of structures.\\
-\vskip 0.4cm
-\bu Good agreement North O/C boundary and CH\\
-\vskip 0.4cm
-\bu Southern O/C boundary shifted $+20\mdeg$ from CH\\
-\vskip 0.4cm
-\bu $\Delta T_e(r) \sim -15\%$ \\
-\vskip 0.4cm
-\bu $\Delta N_e(r) \sim 5\%$\\
-\vskip 2cm
-\hfill (Lloveras et al. 2022)
-\end{columns}
-}
-}
-%--------------- imág sintéticas
-{
-\setbeamercolor{title}{fg=blue}
-\setbeamercolor{normal text}{fg=black}
-\setbeamercolor{frametitle}{fg=blue}
-\usebeamercolor[fg]{normal text}
-\usebackgroundtemplate{{\includegraphics[width=\paperwidth]
-{figuras/fondo_poster_70x90cm.pdf}}}
-\frame{
-\titulo{EUV Synthetic Images: EUV-SRT vs AWSoM}
-\vskip -3cm
-\begin{center}
-\includegraphics[width=0.99\textwidth,clip=]{figuras/Figura_2_paper_imag_sinteticas_2.eps}
-\end{center}
+%\vskip -0.2cm
+%\begin{columns}
+%\column{0.7\textwidth}
+%\begin{center}
+%\includegraphics[width=0.49\textwidth]{figuras/map_Ne_CR2223_DEMT-AIA_H1_L733_r3d_multistart_1105_Rsun2223.eps}
+%\includegraphics[width=0.49\textwidth]{figuras/map_Tm_CR2223_DEMT-AIA_H1_L733_r3d_multistart_1105_Rsun2223_2.eps}\\
+%\includegraphics[width=0.49\textwidth]{figuras/map_Ne_awsom_2223_ener_new_1105_Rsun2223.eps}
+%\includegraphics[width=0.49\textwidth]{figuras/map_Te_awsom_2223_ener_new_1105_Rsun2223_2.eps}\\
+%\includegraphics[width=0.49\textwidth]{figuras/perfil_paper_necr2223_bajo.eps}
+%\includegraphics[width=0.49\textwidth]{figuras/perfil_paper_tecr2223_bajo.eps}\\
+%\end{center}
+%\column{0.3\textwidth}
+%\bu Good agreement in magnitude and morphology of structures.\\
+%\vskip 0.4cm
+%\bu Good agreement North O/C boundary and CH\\
+%\vskip 0.4cm
+%\bu Southern O/C boundary shifted $+20\mdeg$ from CH\\
+%\vskip 0.4cm
+%\bu $\Delta T_e(r) \sim -15\%$ \\
+%\vskip 0.4cm
+%\bu $\Delta N_e(r) \sim 5\%$\\
+%\vskip 2cm
+%\hfill (Lloveras et al. 2022)
+%\end{columns}
+%}
+%}
 
-\begin{columns}
-\column{0.35\textwidth}
-$I_{Synt} \sim \int_{LoS} \mathrm{d}l \, N_e^2 \, Q_k$\\
-%\vskip 0.2cm
-
-
-\column{0.65\textwidth}
-%\scriptsize
-\bu  AWSoM O/C discrepancy due to lack of accuracy of boundary condition.\\ 
-\hfill (Lloveras et al. 2022)\\
-\end{columns}
-%\bu AWSoM reproduce las Ne basales EUV-SRT con un acuerdo $\simeq$ 10\% \\
-%\bu La $\lambda_N$ y temperatura simuladas son sistemáticamente 5-20\% menores.
-}
-}
 
 
 

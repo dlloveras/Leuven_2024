@@ -12,6 +12,59 @@ setup can result in a better understanding of the MHD Doppler
 shift effect. A more observational-data-driven setup will be the
 subject of a future study
 
+---------------------------------
+1-
+
+Ok guys I will start, I think that all of you allready know me, but just in case I'm Diego, I0m doing a postdoc at the heliophysic study group of Mendoza in argentina and I'm here as part of a big collaboration project called Dynasun. Since I'm going to be here for 3 months and since I noticed than not many of you were at the Dynasun kickoff meeting, so I thoight that would be nice to explain a little bit one of the products we can offer that may be usefull to you guys, and also it will be necesary to understand what Daria is going to share with you latter.
+
+This is the main team, we all are applying this tehcnique, improving diagnostics and incorporating new instruments.
+
+2-
+Generally speeking the idea behind the tomogrphy is simple.
+
+We have a 3D distribution of some quantity that we want to estimate. And we make use of several images taken at different viewing angles in order to conditionate all the line of sights and in order to write this problem as a global minimization problem.
+
+
+3-
+We can apply SRT to WL images
+
+
+
+
+
+Isothermic hydrostatic fit.
+In the case of the electron density, the fitted function corresponds to the isothermal hy-
+drostatic equilibrium solution, allowing for variation of the solar gravitational acceleration
+with height. This choice of function provides a straightforward means to directly compare
+the observed coronal thermodynamical state with the hydrostatic solution
+
+
+
+this choice of function provides a straightforward means to directly
+evaluate how compatible the observed coronal thermodynamical state is with the hydrostatic
+solution
+
+
+A value of δ ≈ 0 indicates a high consistency between
+the tomographic result and the hydrostatic regime,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
